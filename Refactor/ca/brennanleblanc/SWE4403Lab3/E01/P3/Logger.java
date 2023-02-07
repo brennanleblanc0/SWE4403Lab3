@@ -9,7 +9,7 @@ public final class Logger {
 
     private Logger(String fileName) {
         try {
-            Thread.sleep(10);
+            Thread.sleep(1000);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
