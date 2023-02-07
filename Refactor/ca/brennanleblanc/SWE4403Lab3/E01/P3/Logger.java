@@ -1,4 +1,4 @@
-package ca.brennanleblanc.SWE4403Lab3.E01.P2;
+package ca.brennanleblanc.SWE4403Lab3.E01.P3;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,6 +8,11 @@ public final class Logger {
     private String fileName;
 
     private Logger(String fileName) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
         this.fileName = fileName;
     }
 
